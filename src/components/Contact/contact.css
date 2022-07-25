@@ -1,0 +1,97 @@
+.am__contact{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 2rem 6rem;
+}
+.am__contact form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.am__contact-input-container p{
+  margin-right: auto;
+  margin-top: 1.5rem;
+	font-weight: 500;
+	font-size: 18px;
+}
+.am__contact-input-container input,
+.am__contact-input-container textarea{
+	margin: 0.3rem 0;
+	width: 900px;
+	height: 40px;
+}
+.am__contact-input-container input,
+.am__contact-input-container textarea{
+  background: transparent;
+	border: 1px solid var(--background-blue-color);
+  border-radius: 5px;
+	outline: none;
+	padding: 0.2rem 0.7rem;
+}
+.am__contact-input-container textarea{
+	width: 900px;
+	height: 200px;
+}
+.am__form-btn{
+  background: var(--background-blue-color);
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 2rem;
+  margin-top: 1rem;
+  margin-bottom: 8rem;
+  letter-spacing: 2px;
+
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 18px;
+
+  transition: all 0.2s ease-out;
+  cursor: pointer;
+}
+.am__contact-input-container textarea:focus,
+.am__contact-input-container input:focus{
+	border: 1px solid var(--dark-blue-color);
+}
+.am__form-btn:hover{
+  color: white;
+  background-color: var(--red-color);
+}
+
+
+@media screen and (max-width: 1000px){
+  .am__contact-input-container input,
+  .am__contact-input-container textarea{
+    width: 750px;
+  }
+}
+@media screen and (max-width: 750px){
+  .am__contact-input-container input,
+  .am__contact-input-container textarea{
+    width: 600px;
+  }
+}
+@media screen and (max-width: 500px){
+  .am__contact{
+    padding: 2rem;
+  }
+  .am__contact-input-container input,
+  .am__contact-input-container textarea{
+    width: 400px;
+  }
+}
+@media screen and (max-width: 400px){
+  .am__contact-input-container input,
+  .am__contact-input-container textarea{
+    width: 300px;
+  }
+  .am__contact-input-container p{
+	font-size: 16px;
+  }
+  .am__form-btn{
+    font-size: 16px;
+  }
+}

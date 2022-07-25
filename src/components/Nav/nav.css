@@ -1,0 +1,126 @@
+.am__nav {
+  padding: 2rem 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.am__nav-logo {
+  font-family: var(--dec-font);
+  color: var(--red-color);
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 5px;
+}
+
+.am__nav-items a {
+  font-size: 14px;
+  letter-spacing: 3px;
+  text-decoration: none;
+  margin-left: 3rem;
+  position: relative;
+  opacity: 0.9;
+}
+
+.am__nav-items a::after {
+  content: '';
+  position: absolute;
+  background-color: var(--red-color);
+  height: 2px;
+  width: 0;
+  left: 0;
+  bottom: -6px;
+  transition: all 0.2s ease-out;
+}
+.am__nav-items a:hover::after{
+  width: 100%;
+}
+
+.am__nav-toggle {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .am__nav-items {
+    position: absolute;
+    top: 110px;
+    display: flex;
+    flex-direction: column;
+    background: var(--red-color);
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateX(-100%);
+    transition: all .45s;
+  }
+  .am__nav-items a{
+    color: white;
+    margin: 2rem 6.3rem;
+  }
+
+  .am__nav-items a::before {
+      background: transparent;
+  }
+
+  .am__nav-items.open {
+      transform: translateX(0);
+  }
+
+  .am__nav-toggle {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .bar {
+    position: relative;
+    width: 32px;
+    height: 2px;
+    background: var(--red-color);
+    transition: all 0.45s ease-in-out;
+  }
+
+  .am__nav-toggle > .bar::before,
+  .am__nav-toggle > .bar::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    background: var(--red-color);
+    border-radius: 2px;
+    transition: all 0.45s ease-in-out;
+  }
+
+  .am__nav-toggle > .bar::before {
+    width: 25px;
+    transform: translateY(-8px);
+    right: 0;
+  }
+
+  .am__nav-toggle > .bar::after {
+    width: 32px;
+    transform: translateY(8px);
+  }
+
+  .am__nav-toggle.open > .bar {
+      transform: translateX(-40px);
+      background: transparent;
+  }
+
+  .am__nav-toggle.open > .bar::before {
+      width: 32px;
+      transform: rotate(45deg) translate(26px, -26px);
+  }
+
+  .am__nav-toggle.open > .bar::after {
+    transform: rotate(-45deg) translate(26px, 26px);
+  }
+
+}
+@media (max-width: 600px){
+  .am__nav-logo{
+    font-size: 20px;
+    width: 130px;
+  }
+}

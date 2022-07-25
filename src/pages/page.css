@@ -1,0 +1,27 @@
+.am__page{
+  padding: 2rem 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.am__alt-header{
+  margin-right: auto;
+}
+.am__alt-header-logo{
+  font-family: var(--dec-font);
+  color: var(--red-color);
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 5px;
+}
+
+
+@media screen and (max-width: 500px) {
+  .am__page{
+    padding: 2rem;
+  }
+  .am__alt-header{
+    margin: 0;
+  }
+}

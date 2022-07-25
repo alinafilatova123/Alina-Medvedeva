@@ -1,0 +1,53 @@
+.am__scroll-btn-container{
+  position: fixed;
+  z-index: 100;
+  right: 70px;
+  top: 670px;
+}
+.am__scroll-btn{
+  border: none;
+  background: transparent;
+  
+  cursor: pointer;
+}
+.am__scroll-btn svg{
+  filter: opacity(.5);
+  transition: all .2s ease-out;
+}
+.am__scroll-btn:hover svg{
+  filter: opacity(1);
+}
+
+
+@media screen and (max-width: 1920px) {
+  .am__scroll-btn-container{
+    right: 100px;
+    top: 970px;
+  }
+}
+@media screen and (max-width: 1600px) {
+  .am__scroll-btn-container{
+    right: 60px;
+    top: 660px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .am__scroll-btn-container{
+    right: 20px;
+  }
+}
+@media screen and (max-width: 990px) {
+  .am__scroll-btn-container{
+    right: 40px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .am__scroll-btn-container{
+    right: 30px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .am__scroll-btn-container{
+    display: none;
+  }
+}

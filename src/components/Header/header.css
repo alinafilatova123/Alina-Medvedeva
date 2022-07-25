@@ -1,0 +1,132 @@
+header{
+  padding: 2rem 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem 0;
+}
+.am__header-section{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.am__header-img{
+  height: 400px;
+  width: 600px;
+  overflow: hidden;
+  margin-right: 2rem;
+}
+.am__header-img img{
+  width: 600px;
+  height: 100%;
+  object-position: 0% 40%;
+  object-fit: cover;
+}
+.am__header-container h1{
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 40px;
+  margin-bottom: 2rem;
+  color: var(----dark-blue-color);
+}
+.am__header-container h1 span{
+  font-size: 50px;
+  color: var(--red-color);
+}
+.am__header-container p{
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-align: justify;
+  width: 430px;
+}
+.am__header-container p span{
+  color: var(--dark-blue-color);
+  font-weight: 700;
+}
+
+
+@media screen and (max-width: 1200px){
+  .am__header-section{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .am__header-img{
+    margin: 0 0 1rem;
+  }
+  .am__header-container{
+    margin-left: 0;
+    margin-right: auto;
+  }
+  .am__header-img{
+    height: 300px;
+    width: 550px;
+  }
+  .am__header-container h1{
+    font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 1rem;
+  }
+  .am__header-container h1 span{
+    font-size: 35px;
+  }
+  .am__header-container p{
+    width: 550px;
+  }
+}
+@media screen and (max-width: 750px){
+  .am__header-img{
+    height: 300px;
+    width: 500px;
+  }
+  .am__header-container h1 span{
+    font-size: 40px;
+  }
+  .am__header-container p{
+    font-size: 16px;
+    letter-spacing: 1px;
+    width: 500px;
+  }
+}
+@media screen and (max-width: 500px){
+  header{
+    padding: 2rem;
+  }
+  .am__header-img{
+    height: 300px;
+    width: 400px;
+  }
+  .am__header-container h1 span{
+    font-size: 30px;
+  }
+  .am__header-container p{
+    width: 400px;
+  }
+
+}
+@media screen and (max-width: 400px){
+  header{
+    margin: 2rem;
+  }
+  .am__header-img{
+    height: 300px;
+    width: 350px;
+  }
+  .am__header-img img{
+    width: 380px;
+  }
+  .am__header-container h1 span{
+    font-size: 30px;
+  }
+  .am__header-container h1{
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 1rem;
+  }
+    .am__header-container p{
+    font-size: 16px;
+    letter-spacing: 1px;
+    width: 350px;
+  }
+}

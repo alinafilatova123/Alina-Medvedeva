@@ -1,0 +1,64 @@
+.am__dron-content{
+  padding: 2rem 6rem;
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.am__dron-img{
+  height: 900px;
+  width: 1300px;
+  margin-bottom: 3rem;
+}
+.am__dron-img img{
+  width: 1300px;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 1200px) {
+  .am__dron-img{
+    width: 1000px;
+    height: 700px;
+  }
+  .am__dron-img img{
+    width: 1000px;
+  }
+}
+@media screen and (max-width: 990px) {
+  .am__dron-img{
+    width: 700px;
+    height: 500px;
+  }
+  .am__dron-img img{
+    width: 700px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .am__dron-img{
+    width: 500px;
+    height: 320px;
+  }
+  .am__dron-img img{
+    width: 500px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .am__dron-img{
+    width: 400px;
+    height: 280px;
+  }
+  .am__dron-img img{
+    width: 400px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .am__dron-img{
+    width: 300px;
+    height: 200px;
+  }
+  .am__dron-img img{
+    width: 300px;
+  }
+}

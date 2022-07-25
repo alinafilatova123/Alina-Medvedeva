@@ -1,0 +1,120 @@
+footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--red-color);
+
+  padding: 3rem 6rem;
+}
+.am__footer-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 1300px;
+}
+.am__footer-container-block{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.am__footer-icon{
+  width: 20px;
+  height: 100%;
+  filter: opacity(0.5);
+}
+.am__footer-container-block div{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.am__footer-container-block svg{
+  filter: opacity(0.5);
+}
+.am__footer-container-block a{
+  text-decoration: none;
+}
+.am__footer-container-block h3{
+  margin: 0 1rem;
+  font-weight: 200;
+  font-size: 20px;
+  color: white;
+}
+.am__footer-container-block p{
+  margin: 0 1rem;
+  font-weight: 500;
+  font-size: 16px;
+  color: white;
+  letter-spacing: 2px;
+}
+
+
+@media screen and (max-width: 1200px){
+  .am__footer-container{
+    width: 1000px;
+  }
+}
+@media screen and (max-width: 1000px){
+  .am__footer-container{
+    width: 800px;
+  }
+  .am__footer-container-block h3{
+    font-size: 14px;
+  }
+  .am__footer-container-block p{
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 750px){
+  .am__footer-container{
+    width: 600px;
+    flex-direction: column;
+  }
+  .am__footer-container-block{
+    margin-bottom: 1rem;
+  }
+  .am__footer-container-block h3{
+    font-size: 16px;
+    margin: 0;
+  }
+  .am__footer-container-block p{
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 500px){
+  .am__footer-container{
+    width: 450px;
+    flex-direction: column;
+  }
+  .am__footer-container-block{
+    margin-bottom: 1rem;
+  }
+  .am__footer-container-block h3{
+    font-size: 16px;
+    margin: 0;
+  }
+  .am__footer-container-block p{
+    font-size: 16px;
+  }
+  .am__footer-icon{
+    display: none;
+  }
+}
+@media screen and (max-width: 500px){
+  .am__footer-container{
+    width: 350px;
+    flex-direction: column;
+  }
+  .am__footer-container-block{
+    margin-bottom: 1rem;
+  }
+  .am__footer-container-block h3{
+    font-size: 14px;
+  }
+  .am__footer-container-block p{
+    font-size: 12px;
+  }
+}
