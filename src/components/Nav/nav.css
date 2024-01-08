@@ -3,7 +3,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 10000;
+  background: rgb(255,255,255);
+  background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 76%, rgba(255,255,255,0) 100%);
 }
+
 .am__nav-logo {
   font-family: var(--dec-font);
   color: var(--red-color);
@@ -40,7 +46,12 @@
 }
 
 @media (max-width: 1200px) {
+  .am__nav {
+    position: initial;
+  }
+
   .am__nav-items {
+    z-index: 3000;
     position: absolute;
     top: 110px;
     display: flex;

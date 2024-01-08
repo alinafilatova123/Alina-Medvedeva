@@ -11,12 +11,11 @@ function ScrollToTop() {
 
   return (
     <>
-    <div onClick={scrollToTop} className='am__scroll-btn-container'>
-      <button className='am__scroll-btn'>
-        <BsFillArrowUpCircleFill size={50} fill={'var(--dark-blue-color)'}/>
-      </button>
-    </div>
-      
+      <div onClick={scrollToTop} className='am__scroll-btn-container'>
+        <button className='am__scroll-btn'>
+          <BsFillArrowUpCircleFill size={50} fill={'var(--dark-blue-color)'}/>
+        </button>
+      </div>
     </>
   )
 }

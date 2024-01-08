@@ -2,13 +2,13 @@ import React, {useState} from 'react'
 import './works.css'
 import { Link } from 'react-router-dom'
 import {BsFillEyeFill} from 'react-icons/bs'
-import { motion } from "framer-motion";
+import { motion } from "framer-motion"
 
-import PreviewImage1 from '../../assets/design/imgs-1/i-3.png'
-import PreviewImage2 from '../../assets/design/imgs-2/shef-2.png'
-import PreviewImage3 from '../../assets/design/imgs-3/logo-1.png'
-import PreviewImage4 from '../../assets/design/imgs-4/88-1.png'
-import PreviewImage5 from '../../assets/design/imgs-5/d-2.png'
+import PreviewImage1 from '../../assets/design/shirt.png'
+import PreviewImage2 from '../../assets/design/shef.png'
+import PreviewImage3 from '../../assets/design/drive.png'
+import PreviewImage4 from '../../assets/design/tiger.png'
+import PreviewImage5 from '../../assets/design/dron.png'
 
 import PreviewImage6 from '../../assets/typography/1.jpg'
 import PreviewImage7 from '../../assets/typography/2.jpg'
